@@ -9,8 +9,8 @@ app.get('/', function(req, res){
 	res.sendFile(path.resolve(__dirname, '../client', 'index.html'));
 })
 
-// start listening to requests on port 8000
-app.listen(8100);
+// start listening to requests on port 8100
+var port = 8100;
 
-// export our app for testing and flexibility, required by index.js
-module.exports = app;
+app.listen(port);
+console.log(`🌎  ===> server listening on port ${port}`);
