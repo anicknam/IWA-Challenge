@@ -1,7 +1,13 @@
 <div>Inside Dashboard
 
   <ul>
-  	<li ng-repeat="program in allPrograms" ng-click="clickHandler(program)">{{program.guid}}</li>
+  	<li ng-repeat="program in programs" ng-click="clickHandler(program)">
+  		<div>
+  		<img ng-src="{{program.icon_url}}"/>
+  		{{program.title}}	
+  		</div>
+
+  	</li>
   </ul>
 
 </div>
