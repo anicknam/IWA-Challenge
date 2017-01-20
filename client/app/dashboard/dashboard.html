@@ -1,4 +1,8 @@
 <div>Inside Dashboard
-  <a href="#!/details">go to details</a>
+  <!-- <a href="#!/details">go to details</a> -->
+
+  <ul>
+  	<li ng-repeat="program in programs" ng-click="clickHandler(program)">{{program}}</li>
+  </ul>
 
 </div>

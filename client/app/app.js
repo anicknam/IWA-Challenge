@@ -1,5 +1,5 @@
 angular.module('iwa', [
-  // 'iwa.services',
+  'iwa.services',
   'iwa.dashboard',
   'iwa.details',
   'ngRoute'
@@ -10,7 +10,7 @@ angular.module('iwa', [
       templateUrl: 'app/dashboard/dashboard.html',
       controller: 'DashboardController',
     })
-    .when('/details', {
+    .when('/details/:guid', {
       templateUrl: 'app/details/details.html',
       controller: 'DetailsController',
     })
