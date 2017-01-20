@@ -1,9 +1,9 @@
 angular.module('iwa.services', [])
 
-.factory('DashboardPrograms', function () {
+.factory('DashboardPrograms', function ($http) {
 
   var getAll = function () {
-    return ['aa', 'bb', 'cc'];
+    return $http.get('./data/program_blueprints.json')
   };
 
   return {

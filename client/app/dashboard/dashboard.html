@@ -1,8 +1,7 @@
 <div>Inside Dashboard
-  <!-- <a href="#!/details">go to details</a> -->
 
   <ul>
-  	<li ng-repeat="program in programs" ng-click="clickHandler(program)">{{program}}</li>
+  	<li ng-repeat="program in allPrograms" ng-click="clickHandler(program)">{{program.guid}}</li>
   </ul>
 
 </div>

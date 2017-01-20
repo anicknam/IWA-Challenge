@@ -2,7 +2,9 @@ angular.module('iwa.dashboard', [])
 
 .controller('DashboardController', function ($scope, $location, DashboardPrograms) {
    
-   $scope.programs = DashboardPrograms.getAll();
+   DashboardPrograms.getAll().then(function(res){
+    $scope.allPrograms = res.data["program_blueprints"];
+   });
 
    $scope.clickHandler = function(guid){
      $location.path('/details/' + guid);
