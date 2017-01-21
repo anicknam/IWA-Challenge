@@ -1,9 +1,9 @@
 /* Portrait */
 @media (max-width: 400px) and (max-height: 640px) {
 
-/*  div {
+  div {
     	border: 1px solid pink;
-  }*/
+  }
 
   body {
   	font-family: Arial;
@@ -65,6 +65,45 @@
   .program {
   	flex: 0 0 40%;
     
+  }
+
+  .details-body {
+    background-color: #4d4d4d;
+    height: auto;
+  }
+
+  .program-icon-details {
+  	text-align: center;
+  }
+
+  .program-icon-details img {
+  	width: 80px;
+  }
+
+  .program-title-details {
+  	text-align: center;
+  	color: white;
+  	font-size: 24px;
+  }
+
+  .program-description {
+  	margin-top: 25px;
+  	margin-bottom: 25px;
+  	padding-left: 20px;
+  	padding-right: 20px;
+  	color: white;
+  }
+
+  .goals {
+    color: white;
+    padding-left: 20px;
+    padding-right: 20px;
+
+  }
+
+  .goals-title {
+  	text-align: center;
+  	font-size: 20px;
   }
 
 }

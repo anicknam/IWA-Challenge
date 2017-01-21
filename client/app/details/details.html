@@ -1,21 +1,27 @@
 <div class="view-container">
     <div class="header">
       <a href="#!/">go back</a>
-    	
+    </div>
+    <div class="details-body">
+	    <div class="program-icon-details">
+	    	<img ng-src="{{currProgram.icon_url}}"/>
+	    </div>
+
+	    <div class="program-title-details">{{currProgram.title}}</div>
+	    <div class="program-description">
+		    <div>{{currProgram.description}}</div><br/>
+			  <div>{{currProgram.incentive_description}}</div>
+		    <div ng-if="currProgram.incentive_description == null">There are no rewards / earnings for this program at this point. Please check later :)</div>
+		  </div>
+
+		  <div class="goals" ng-if="hasGoals">
+			  <div class="goals-title">Goals (Incentive Values)</div>
+			  <ul>
+				  <li ng-repeat="goal in currGoals">{{goal.title}} ({{goal.incentive_value}})</li>
+			  </ul>
+			  <div>Total Incentive Value: <span>{{totalValue}}</span></div>
+		  </div>
+
     </div>
 
-
-    <img class="program-icon" ng-src="{{currProgram.icon_url}}"/>
-    <div>{{currProgram.title}}</div>
-    <div>{{currProgram.description}}</div><br/>
-	<div>{{currProgram.incentive_description}}</div>
-	<div ng-if="currProgram.incentive_description == null">There are no rewards / earnings for this program at this point. Please check later :)</div>
-
-	<div ng-if="hasGoals">
-		<div>Goals:</div>
-		<ul>
-			<li ng-repeat="goal in currGoals">{{goal.title}}{{goal.incentive_value}}</li>
-		</ul>
-		<div>Total Incentive Value: <span>{{totalValue}}</span></div>
-	</div>
 </div>
