@@ -1,0 +1,6 @@
+/* Portrait */
+@media(max-width: 360px) and (max-height: 640px){
+	div {
+		border: 5px solid green;
+	}
+}
