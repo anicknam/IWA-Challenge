@@ -18,8 +18,6 @@ angular.module('iwa.details', [])
      		return store;
      	}, {});
 
-
-     	console.log($scope.currProgram.goals)
      	$scope.hasGoals = $scope.currProgram.goals.length > 0;
      	if ($scope.hasGoals) {
      	  $scope.currGoals = $scope.currProgram.goals.map(function(goal) {
@@ -30,8 +28,6 @@ angular.module('iwa.details', [])
      	  	return sum + goal.incentive_value;
      	  }, 0);
      	}
-
-
      })
 
    });
