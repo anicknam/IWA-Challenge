@@ -8,8 +8,10 @@
 	<div ng-if="currProgram.incentive_description == null">There are no rewards / earnings for this program at this point. Please check later :)</div>
 
 	<div ng-if="hasGoals">
+		<div>Goals:</div>
 		<ul>
 			<li ng-repeat="goal in currGoals">{{goal.title}}{{goal.incentive_value}}</li>
 		</ul>
+		<div>Total Incentive Value: <span>{{totalValue}}</span></div>
 	</div>
 </div>

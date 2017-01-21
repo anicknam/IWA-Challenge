@@ -25,7 +25,10 @@ angular.module('iwa.details', [])
      	  $scope.currGoals = $scope.currProgram.goals.map(function(goal) {
      	  	return goalsStorage[goal.guid];
      	  });
-     	  console.log($scope.currGoals)
+
+     	  $scope.totalValue = $scope.currGoals.reduce(function(sum, goal){
+     	  	return sum + goal.incentive_value;
+     	  }, 0);
      	}
 
 
