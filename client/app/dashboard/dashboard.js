@@ -7,8 +7,8 @@ angular.module('iwa.dashboard', [])
    });
 
 
-   $scope.clickHandler = function(guid){
-     $location.path(`details/${guid}`);
+   $scope.clickHandler = function(program){
+     $location.path(`/details/${program.guid}`);
    };
 
 
