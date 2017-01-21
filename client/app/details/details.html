@@ -3,4 +3,13 @@
 
     <img ng-src="{{currProgram.icon_url}}"/>
     <div>{{currProgram.title}}</div>
+    <div>{{currProgram.description}}</div><br/>
+	<div>{{currProgram.incentive_description}}</div>
+	<div ng-if="currProgram.incentive_description == null">There are no rewards / earnings for this program at this point. Please check later :)</div>
+
+	<div ng-if="hasGoals">
+		<ul>
+			<li ng-repeat="goal in currGoals">{{goal.title}}{{goal.incentive_value}}</li>
+		</ul>
+	</div>
 </div>
