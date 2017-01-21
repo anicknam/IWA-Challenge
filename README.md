@@ -49,7 +49,7 @@ Any questions please email us. There is no time limit on this challenge, but we 
 
 ### SOLUTION
 
-#### Installing Dependencies
+#### Run The App 
 
 From the directory which you wish to place the development files:
 
@@ -61,4 +61,10 @@ From within the root directory:
 
 ```sh
 node server/server.js
+```
+
+Run the app on local host on port 8100
+
+```sh
+http://localhost:8100
 ```
