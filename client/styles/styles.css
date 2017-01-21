@@ -1,6 +1,19 @@
 /* Portrait */
-@media(max-width: 360px) and (max-height: 640px){
-	div {
-		border: 5px solid green;
-	}
+@media (max-width: 360px) and (max-height: 640px) {
+
+  div {
+    	border: 1px solid pink;
+  }
+
+  .program-icon {
+  	width: 90px;
+  }
+
+  li {
+		list-style: none;
+  }
+
+   
+
 }
+
