@@ -1,35 +1,46 @@
 /* Portrait */
 @media (max-width: 400px) and (max-height: 640px) {
 
-  div {
+/*  div {
     	border: 1px solid pink;
-  }
+  }*/
 
   body {
   	font-family: Arial;
   }
 
   .program {
-  	/*width: 50%;*/
   	margin-right: 10px;
   	margin-left: 10px;
-
   }
+
+  .program:hover .program-icon img {
+  	opacity: 2.0;
+  	filter: alpha(opacity=100);
+  }
+
+/*  .program:hover .program-title {
+  	font-weight: 4000;
+  }*/
 
   .program-icon {
   	margin-top: 10px;
-  	border: 3px solid blue;
+  	/*border: 3px solid blue;*/
   	text-align: center;
   }
 
   .program-icon img {
+  	opacity: 0.7;
+  	filter: alpha(opacity=40);
   	width: 90px;
 
   }
 
   .program-title {
 		margin-bottom: 20px;
+		font-weight: 200;
 		text-align: center;
+		color: white;
   }
 
 /*  li {
@@ -47,7 +58,7 @@
   	flex-flow: row;
   	flex-wrap: wrap;
   	justify-content: center;
-  	/*height: 80%;*/
+  	background-color: #4d4d4d;
 
   }
 
