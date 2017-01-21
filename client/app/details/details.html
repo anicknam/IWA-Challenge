@@ -1,7 +1,7 @@
 <div class="view-container">
     <div class="header details">
     	<div>
-    	  <a href="#!/" id="back-button"><i class="fa fa-angle-left" aria-hidden="true"></i></a>
+    	  <a href="#!/" id="back-button"l><i class="fa fa-angle-left" aria-hidden="true"></i></a>
     	</div>
     </div>
     <div class="details-body">
@@ -16,12 +16,15 @@
 		    <div ng-if="currProgram.incentive_description == null">There are no rewards / earnings for this program at this point. Please check later :)</div>
 		  </div>
 
-		  <div class="goals" ng-if="hasGoals">
+		  <div class="goals">
 			  <div class="goals-title">Goals <span>(Incentive Values)</span></div>
-			  <ul class="fa-ul">
-				  <li ng-repeat="goal in currGoals"><i class="fa-li fa fa-square"></i>{{goal.title}} <span>({{goal.incentive_value}})</span></li>
-			  </ul>
-			  <div>Total Incentive Value: <span>{{totalValue}}</span></div>
+			  <div ng-if="hasGoals">
+		  	  <ul class="fa-ul">
+		  		  <li ng-repeat="goal in currGoals"><i class="fa-li fa fa-square"></i>{{goal.title}} <span>({{goal.incentive_value}})</span></li>
+		  	  </ul>
+		  	  <div>Total Incentive Value: <span>{{totalValue}}</span></div>
+			  </div>
+			  <div ng-if="hasGoals === false" class="noGoals-message">There are no goals at this point.</div>
 		  </div>
 
     </div>
