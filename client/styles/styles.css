@@ -11,14 +11,15 @@
 
   .program {
   	/*width: 50%;*/
+  	margin-right: 10px;
+  	margin-left: 10px;
 
   }
 
   .program-icon {
-  	/*width: 90px;*/
-  	/*height: 60px;*/
+  	margin-top: 10px;
   	border: 3px solid blue;
-
+  	text-align: center;
   }
 
   .program-icon img {
@@ -27,7 +28,8 @@
   }
 
   .program-title {
-
+		margin-bottom: 20px;
+		text-align: center;
   }
 
 /*  li {
@@ -51,7 +53,7 @@
 
   .program {
   	flex: 0 0 40%;
-
+    
   }
 
 }
