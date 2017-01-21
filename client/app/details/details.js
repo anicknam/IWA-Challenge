@@ -12,7 +12,7 @@ angular.module('iwa.details', [])
 
      // get a list of all goals
      Goals.getAll().then(function(goals){
-     	// create a storage of all goals with guid used as key
+     	// create a storage of all goals with 'guid' used as key
      	var goalsStorage = goals.reduce(function(store, goal){
      		store[goal.guid] = {"title": goal.title, "incentive_value": goal.incentive_value}
      		return store;
