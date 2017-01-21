@@ -46,3 +46,19 @@ The code challenge is as follows:
 - We will also give extra credit for those using native JS methods like .reduce, .map, and .filter.
 
 Any questions please email us. There is no time limit on this challenge, but we expect you to be done with it within a few days.
+
+### SOLUTION
+
+#### Installing Dependencies
+
+From the directory which you wish to place the development files:
+
+```sh
+git clone https://github.com/anicknam/IWA-Challenge.git
+```
+
+From within the root directory:
+
+```sh
+node server/server.js
+```
