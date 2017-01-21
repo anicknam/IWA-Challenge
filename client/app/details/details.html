@@ -1,10 +1,8 @@
 <div class="view-container">
-    <div class="header">
-    	<div id="back-button" >
-    	  <!-- <a href="#!/">Back</a> -->
-    	  <i class="fa fa-angle-left" aria-hidden="true"></i>
+    <div class="header details">
+    	<div>
+    	  <a href="#!/"><i id="back-button" class="fa fa-angle-left" aria-hidden="true"></i></a>
     	</div>
-
     </div>
     <div class="details-body">
 	    <div class="program-icon-details">
@@ -19,9 +17,9 @@
 		  </div>
 
 		  <div class="goals" ng-if="hasGoals">
-			  <div class="goals-title">Goals (Incentive Values)</div>
-			  <ul>
-				  <li ng-repeat="goal in currGoals">{{goal.title}} ({{goal.incentive_value}})</li>
+			  <div class="goals-title">Goals <span>(Incentive Values)</span></div>
+			  <ul class="fa-ul">
+				  <li ng-repeat="goal in currGoals"><i class="fa-li fa fa-square"></i>{{goal.title}} <span>({{goal.incentive_value}})</span></li>
 			  </ul>
 			  <div>Total Incentive Value: <span>{{totalValue}}</span></div>
 		  </div>
