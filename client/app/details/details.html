@@ -11,14 +11,12 @@
 	    <div class="program-icon-details">
 	    	<img ng-src="{{currProgram.icon_url}}"/>
 	    </div>
-
 	    <div class="program-title-details">{{currProgram.title}}</div>
 	    <div class="program-description">
 		    <div>{{currProgram.description}}</div><br/>
 			  <div>{{currProgram.incentive_description}}</div>
 		    <div ng-if="currProgram.incentive_description == null">There are no rewards / earnings for this program at this point. Please check later :)</div>
 		  </div>
-
 		  <div class="goals">
 			  <div class="goals-title">Goals <span>(Incentive Values)</span></div>
 			  <div ng-if="hasGoals">
@@ -29,7 +27,5 @@
 			  </div>
 			  <div ng-if="hasGoals === false" class="noGoals-message">There are no goals at this point.</div>
 		  </div>
-
     </div>
-
 </div>

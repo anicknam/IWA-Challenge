@@ -1,11 +1,11 @@
 angular.module('iwa.details', [])
 
 .controller('DetailsController', function ($scope, $routeParams, DashboardPrograms, Goals) {
-	// get guid of the clicked program
+	// get 'guid' of the clicked program
    $scope.currGuid = $routeParams.guid;
 
    DashboardPrograms.getAll().then(function(programs){
-   	 // find program with current guid from list of all programs
+   	 // find program with current 'guid' from list of all programs
      $scope.currProgram = programs.filter(function(program){
        return program.guid === $scope.currGuid; 
      })[0];
@@ -28,8 +28,7 @@ angular.module('iwa.details', [])
      	  	return sum + goal.incentive_value;
      	  }, 0);
      	}
-     })
-
+     });
    });
 
   });
