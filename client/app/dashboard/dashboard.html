@@ -1,12 +1,11 @@
-<div>Inside Dashboard
-
-  <ul>
-  	<li ng-repeat="program in programs" ng-click="clickHandler(program)">
-  		<div>
-  		<img class="program-icon" ng-src="{{program.icon_url}}"/>
-  		{{program.title}}	
-  		</div>
-  	</li>
-  </ul>
-
+<div class="view-container">
+    <div class="header">Dashboard</div>
+	<div class="dashboard-grid">
+	  	<div class="program" ng-repeat="program in programs" ng-click="clickHandler(program)">
+	  		<div class="program-icon">
+	  		  <img ng-src="{{program.icon_url}}"/>	
+	  		</div>
+	  		<div class="program-title">{{program.title}}</div>
+	  	</div>
+	</div>
 </div>
